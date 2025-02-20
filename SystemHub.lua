@@ -616,8 +616,7 @@ task.spawn(SCRIPT_15)
 -- // StarterGui.SystemHub.Frame.Execute2.LocalScript \\ --
 local function SCRIPT_1e()
 local script = UI["1e"]
-	local button = script.Parent
-	local textLabel = script.Parent.Parent.container:WaitForChild("label") 
+	local button = script.Parent.Parent.Execute2
 	
 	local function onButtonClick()
 		script.Parent.Parent.Home.Actions.Version.TextLabels.Text = "Status: Running"
