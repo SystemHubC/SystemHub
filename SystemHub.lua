@@ -595,8 +595,7 @@ local script = UI["15"]
 	
 	local function onButtonClick()
 		script.Parent.Parent.Home.Actions.Version.TextLabels.Text = "Status: Running"
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemHubC/SystemHub/refs/heads/main/Idk.lua"))()
-		print("workingSD")
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemHubC/SystemHub/refs/heads/main/Idk.lua"))()
 		wait(13)
 		local textObject = script.Parent.Parent.Home.Actions.Version.TextLabels
 		local localText = "Status: successfully"
