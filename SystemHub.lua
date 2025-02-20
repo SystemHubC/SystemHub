@@ -1734,7 +1734,7 @@ task.spawn(SCRIPT_1e)
 local function SCRIPT_1f()
 local script = UI["1f"]
 	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
+	function dragifyy(Frame)
 		dragToggle = nil
 		dragSpeed = 0.15
 		dragInput = nil
@@ -1768,7 +1768,7 @@ local script = UI["1f"]
 			end
 		end)
 	end
-	dragify(script.Parent)
+	dragifyy(script.Parent)
 	
 end
 task.spawn(SCRIPT_1f)
@@ -1861,7 +1861,7 @@ task.spawn(SCRIPT_5e)
 local function SCRIPT_7a()
 local script = UI["7a"]
 	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
+	function dragifym(Frame)
 		dragToggle = nil
 		dragSpeed = 0.15
 		dragInput = nil
@@ -1895,7 +1895,7 @@ local script = UI["7a"]
 			end
 		end)
 	end
-	dragify(script.Parent)
+	dragifym(script.Parent)
 	
 end
 task.spawn(SCRIPT_7a)
