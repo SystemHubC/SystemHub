@@ -699,9 +699,9 @@ task.spawn(SCRIPT_25)
 -- // StarterGui.SystemHub.LocalScript \\ --
 local function SCRIPT_3d()
 local script = UI["3d"]
-	local frame = script.Parent.Music
-	local open = script.Parent.Frame.Other
-	local close = script.Parent.Frame.Other
+	local frame = script.Parent.Frame
+	local open = script.Parent.Menu
+	local close = script.Parent.Menu
 	
 	frame.Size = UDim2.new(0.188, 0,0.071, 0)
 	
@@ -712,7 +712,7 @@ local script = UI["3d"]
 		if frame.Size == UDim2.new(0.188, 0,0.071, 0) then
 			
 			frame.Visible = true
-			close.Instruction.Text = "Close Music UI"
+			close.Instruction.Text = "Close System Hub"
 			frame:TweenSize(UDim2.new(0.366, 0,0.448, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Back,0.2)
 	
 		elseif frame.Size == UDim2.new(0.366, 0,0.448, 0) then
@@ -720,7 +720,7 @@ local script = UI["3d"]
 			frame:TweenSize(UDim2.new(0.188, 0,0.071, 0),Enum.EasingDirection.In,Enum.EasingStyle.Quint,0.15)
 			wait(0.13)
 			frame.Visible = false
-			open.Instruction.Text = "Music UI"
+			open.Instruction.Text = "Open System Hub"
 		end
 	end
 	
