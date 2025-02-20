@@ -1,4 +1,4 @@
-If game.PlaceId == 11938746175 then
+if game.PlaceId == 11938746175 then
 
 local ReplicatedStorage_upvr = game:GetService("ReplicatedStorage")
 local workspace = game:GetService("Workspace")
@@ -9,7 +9,7 @@ local StarterGui_upvr = game:GetService("StarterGui")
 local TweenService_upvr = game:GetService("TweenService")
 
 workspace:SetAttribute("MineSpeed", 0.1)
-game.Players.LocalPlayer.PlayerGui.SystemHub.Frame.Home.Actions.Version.TextLabels.text = "Status: successfully"
+game.Players.LocalPlayer.PlayerGui.SystemHub.Frame.Home.Actions.Version.TextLabels.Text = "Status: successfully"
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
@@ -397,9 +397,8 @@ local Toggle_AntiFling = Tabss:CreateToggle({
                 end
             end)
         end
-    end,
+    end
 })
-end
 else
-    game.Players.LocalPlayer.PlayerGui.SystemHub.Frame.Home.Actions.Version.TextLabels.text = "Status: the game is not supported"
+    game.Players.LocalPlayer.PlayerGui.SystemHub.Frame.Home.Actions.Version.TextLabels.Text = "Status: the game is not supported"
 end
