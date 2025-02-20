@@ -14,6 +14,7 @@ UI["1"]["ResetOnSpawn"] = false
 
 -- // StarterGui.SystemHub.Frame \\ --
 UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["Visible"] = false
 UI["2"]["BorderSizePixel"] = 0
 UI["2"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
 UI["2"]["Size"] = UDim2.new(0.36615, 0, 0.44839, 0)
@@ -120,7 +121,7 @@ UI["e"]["TextSize"] = 14
 UI["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
 UI["e"]["BackgroundColor3"] = Color3.fromRGB(19, 125, 84)
 UI["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["e"]["ZIndex"] = 2
+UI["e"]["ZIndex"] = 5
 UI["e"]["Size"] = UDim2.new(0.39018, 0, 0.13035, 0)
 UI["e"]["Name"] = [[Execute]]
 UI["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
@@ -482,7 +483,7 @@ UI["35"]["TextSize"] = 14
 UI["35"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
 UI["35"]["BackgroundColor3"] = Color3.fromRGB(116, 150, 160)
 UI["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["35"]["ZIndex"] = 1000000
+UI["35"]["ZIndex"] = 1000000000
 UI["35"]["Size"] = UDim2.new(0.06836, 0, 0.08974, 0)
 UI["35"]["Name"] = [[Menu]]
 UI["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
@@ -590,12 +591,12 @@ task.spawn(SCRIPT_7)
 -- // StarterGui.SystemHub.Frame.Execute.LocalScript \\ --
 local function SCRIPT_15()
 local script = UI["15"]
-	local button = script.Parent
-	local textLabel = script.Parent.Parent.container:WaitForChild("label") 
+	local button = script.Parent.Parent.Execute
 	
 	local function onButtonClick()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemHubC/SystemHub/refs/heads/main/Idk.lua"))()
 		script.Parent.Parent.Home.Actions.Version.TextLabels.Text = "Status: Running"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemHubC/SystemHub/refs/heads/main/Idk.lua"))()
+		print("workingSD")
 		wait(13)
 		local textObject = script.Parent.Parent.Home.Actions.Version.TextLabels
 		local localText = "Status: successfully"
