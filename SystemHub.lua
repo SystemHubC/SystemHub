@@ -1650,7 +1650,7 @@ local script = UI["15"]
 	local function onButtonClick()
 		menu.Visible = true
 		script.Parent.Parent.Home.Actions.Version.TextLabels.Text = "Status: Running"
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemHubC/SystemHub/refs/heads/main/Idk.lua"))(
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemHubC/SystemHub/refs/heads/main/Idk.lua"))()
 		textLabel.Text = textPath
 		wait(1)
 		textLabel.Text = textPath2
@@ -1699,7 +1699,7 @@ local script = UI["1e"]
 	
 	local function onButtonClick()
 		menu.Visible = true
-		script.Parent.Parent.Home.Actions.Version.TextLabels.text = Status
+		script.Parent.Parent.Home.Actions.Version.TextLabels.Text = Status
 		textLabel.Text = textPath
 		wait(1)
 		textLabel.Text = textPath2
