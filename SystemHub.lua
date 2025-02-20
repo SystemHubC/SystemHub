@@ -1,3 +1,7 @@
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 61 | SCRIPTS: 6 | MODULES: 0 \\ --
+
 local UI = {}
 
 -- // StarterGui.SystemHub \\ --
@@ -10,7 +14,6 @@ UI["1"]["ResetOnSpawn"] = false
 
 -- // StarterGui.SystemHub.Frame \\ --
 UI["2"] = Instance.new("Frame", UI["1"])
-UI["2"]["Visible"] = false
 UI["2"]["BorderSizePixel"] = 0
 UI["2"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
 UI["2"]["Size"] = UDim2.new(0.36615, 0, 0.44839, 0)
@@ -467,706 +470,93 @@ UI["32"]["SortOrder"] = Enum.SortOrder.LayoutOrder
 UI["33"] = Instance.new("Folder", UI["29"])
 UI["33"]["Name"] = [[Status]]
 
--- // StarterGui.SystemHub.Frame.Other \\ --
-UI["34"] = Instance.new("TextButton", UI["2"])
-UI["34"]["BorderSizePixel"] = 0
-UI["34"]["AutoButtonColor"] = false
-UI["34"]["TextSize"] = 14
-UI["34"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["34"]["BackgroundColor3"] = Color3.fromRGB(123, 181, 114)
-UI["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["34"]["Size"] = UDim2.new(0.39143, 0, 0.13035, 0)
-UI["34"]["Name"] = [[Other]]
-UI["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["34"]["Text"] = [[]]
-UI["34"]["Position"] = UDim2.new(0.55647, 0, 0.80073, 0)
-
--- // StarterGui.SystemHub.Frame.Other.Frame \\ --
-UI["35"] = Instance.new("Frame", UI["34"])
-UI["35"]["Visible"] = false
-UI["35"]["BorderSizePixel"] = 0
-UI["35"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21)
-UI["35"]["Size"] = UDim2.new(1.23852, 0, 1, 0)
-UI["35"]["Position"] = UDim2.new(-0.23852, 0, 0, 0)
-UI["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["35"]["BackgroundTransparency"] = 0.1
-
--- // StarterGui.SystemHub.Frame.Other.Frame.Instruction \\ --
-UI["36"] = Instance.new("TextLabel", UI["35"])
-UI["36"]["TextWrapped"] = true
-UI["36"]["BorderSizePixel"] = 0
-UI["36"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["36"]["TextSize"] = 14
-UI["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["36"]["BackgroundTransparency"] = 1
-UI["36"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["36"]["Size"] = UDim2.new(0.65123, 0, 0.95, 0)
-UI["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["36"]["Text"] = [[Locked]]
-UI["36"]["Name"] = [[Instruction]]
-UI["36"]["Position"] = UDim2.new(0.30877, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Frame.Other.Frame.ImageLabel \\ --
-UI["37"] = Instance.new("ImageLabel", UI["35"])
-UI["37"]["BorderSizePixel"] = 0
-UI["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["37"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["37"]["Image"] = [[rbxassetid://5743022869]]
-UI["37"]["Size"] = UDim2.new(0.11205, 0, 0.52994, 0)
-UI["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["37"]["BackgroundTransparency"] = 1
-UI["37"]["Position"] = UDim2.new(0.099, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Frame.Other.Frame.ImageLabel.Aspect \\ --
-UI["38"] = Instance.new("UIAspectRatioConstraint", UI["37"])
-UI["38"]["Name"] = [[Aspect]]
-
--- // StarterGui.SystemHub.Frame.Other.Instruction \\ --
-UI["39"] = Instance.new("TextLabel", UI["34"])
-UI["39"]["TextWrapped"] = true
-UI["39"]["BorderSizePixel"] = 0
-UI["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["39"]["TextSize"] = 14
-UI["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["39"]["BackgroundTransparency"] = 1
-UI["39"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["39"]["Size"] = UDim2.new(0.85267, 0, 0.95, 0)
-UI["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["39"]["Text"] = [[Music UI]]
-UI["39"]["Name"] = [[Instruction]]
-UI["39"]["Position"] = UDim2.new(0.07749, 0, 0.47287, 0)
-
--- // StarterGui.SystemHub.Frame.Other.UICorner \\ --
-UI["3a"] = Instance.new("UICorner", UI["34"])
-UI["3a"]["CornerRadius"] = UDim.new(0.2, 0)
-
 -- // StarterGui.SystemHub.Frame.UIPadding \\ --
-UI["3b"] = Instance.new("UIPadding", UI["2"])
+UI["34"] = Instance.new("UIPadding", UI["2"])
 
 
 -- // StarterGui.SystemHub.Menu \\ --
-UI["3c"] = Instance.new("TextButton", UI["1"])
-UI["3c"]["BorderSizePixel"] = 0
-UI["3c"]["AutoButtonColor"] = false
-UI["3c"]["TextSize"] = 14
-UI["3c"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3c"]["BackgroundColor3"] = Color3.fromRGB(116, 150, 160)
-UI["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["3c"]["ZIndex"] = 1000000
-UI["3c"]["Size"] = UDim2.new(0.06836, 0, 0.08974, 0)
-UI["3c"]["Name"] = [[Menu]]
-UI["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3c"]["Text"] = [[]]
-UI["3c"]["Position"] = UDim2.new(0.01205, 0, 0.73218, 0)
+UI["35"] = Instance.new("TextButton", UI["1"])
+UI["35"]["BorderSizePixel"] = 0
+UI["35"]["AutoButtonColor"] = false
+UI["35"]["TextSize"] = 14
+UI["35"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["35"]["BackgroundColor3"] = Color3.fromRGB(116, 150, 160)
+UI["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["35"]["ZIndex"] = 1000000
+UI["35"]["Size"] = UDim2.new(0.06836, 0, 0.08974, 0)
+UI["35"]["Name"] = [[Menu]]
+UI["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["35"]["Text"] = [[]]
+UI["35"]["Position"] = UDim2.new(0.4656, 0, 0.02998, 0)
 
 -- // StarterGui.SystemHub.Menu.Frame \\ --
-UI["3d"] = Instance.new("Frame", UI["3c"])
-UI["3d"]["Visible"] = false
-UI["3d"]["BorderSizePixel"] = 0
-UI["3d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21)
-UI["3d"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3d"]["BackgroundTransparency"] = 0.5
+UI["36"] = Instance.new("Frame", UI["35"])
+UI["36"]["Visible"] = false
+UI["36"]["BorderSizePixel"] = 0
+UI["36"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21)
+UI["36"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["36"]["BackgroundTransparency"] = 0.5
 
 -- // StarterGui.SystemHub.Menu.Frame.Instruction \\ --
-UI["3e"] = Instance.new("TextLabel", UI["3d"])
-UI["3e"]["TextWrapped"] = true
-UI["3e"]["BorderSizePixel"] = 0
-UI["3e"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["3e"]["TextSize"] = 14
-UI["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["3e"]["BackgroundTransparency"] = 1
-UI["3e"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["3e"]["Size"] = UDim2.new(0.65123, 0, 0.95, 0)
-UI["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3e"]["Text"] = [[Locked]]
-UI["3e"]["Name"] = [[Instruction]]
-UI["3e"]["Position"] = UDim2.new(0.30877, 0, 0.5, 0)
+UI["37"] = Instance.new("TextLabel", UI["36"])
+UI["37"]["TextWrapped"] = true
+UI["37"]["BorderSizePixel"] = 0
+UI["37"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["37"]["TextSize"] = 14
+UI["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["37"]["BackgroundTransparency"] = 1
+UI["37"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["37"]["Size"] = UDim2.new(0.65123, 0, 0.95, 0)
+UI["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["37"]["Text"] = [[Locked]]
+UI["37"]["Name"] = [[Instruction]]
+UI["37"]["Position"] = UDim2.new(0.30877, 0, 0.5, 0)
 
 -- // StarterGui.SystemHub.Menu.Frame.ImageLabel \\ --
-UI["3f"] = Instance.new("ImageLabel", UI["3d"])
-UI["3f"]["BorderSizePixel"] = 0
-UI["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["3f"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["3f"]["Image"] = [[rbxassetid://5743022869]]
-UI["3f"]["Size"] = UDim2.new(0.11205, 0, 0.52994, 0)
-UI["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["3f"]["BackgroundTransparency"] = 1
-UI["3f"]["Position"] = UDim2.new(0.099, 0, 0.5, 0)
+UI["38"] = Instance.new("ImageLabel", UI["36"])
+UI["38"]["BorderSizePixel"] = 0
+UI["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["38"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["38"]["Image"] = [[rbxassetid://5743022869]]
+UI["38"]["Size"] = UDim2.new(0.11205, 0, 0.52994, 0)
+UI["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["38"]["BackgroundTransparency"] = 1
+UI["38"]["Position"] = UDim2.new(0.099, 0, 0.5, 0)
 
 -- // StarterGui.SystemHub.Menu.Frame.ImageLabel.Aspect \\ --
-UI["40"] = Instance.new("UIAspectRatioConstraint", UI["3f"])
-UI["40"]["Name"] = [[Aspect]]
+UI["39"] = Instance.new("UIAspectRatioConstraint", UI["38"])
+UI["39"]["Name"] = [[Aspect]]
 
 -- // StarterGui.SystemHub.Menu.Instruction \\ --
-UI["41"] = Instance.new("TextLabel", UI["3c"])
-UI["41"]["TextWrapped"] = true
-UI["41"]["BorderSizePixel"] = 0
-UI["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["41"]["TextSize"] = 14
-UI["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["41"]["BackgroundTransparency"] = 1
-UI["41"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["41"]["Size"] = UDim2.new(0.86077, 0, 0.95, 0)
-UI["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["41"]["Text"] = [[Open System Hub]]
-UI["41"]["Name"] = [[Instruction]]
-UI["41"]["Position"] = UDim2.new(0.06938, 0, 0.46823, 0)
+UI["3a"] = Instance.new("TextLabel", UI["35"])
+UI["3a"]["TextWrapped"] = true
+UI["3a"]["BorderSizePixel"] = 0
+UI["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3a"]["TextSize"] = 14
+UI["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3a"]["BackgroundTransparency"] = 1
+UI["3a"]["AnchorPoint"] = Vector2.new(0, 0.5)
+UI["3a"]["Size"] = UDim2.new(0.86077, 0, 0.95, 0)
+UI["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3a"]["Text"] = [[Open System Hub]]
+UI["3a"]["Name"] = [[Instruction]]
+UI["3a"]["Position"] = UDim2.new(0.06938, 0, 0.48708, 0)
 
 -- // StarterGui.SystemHub.Menu.UICorner \\ --
-UI["42"] = Instance.new("UICorner", UI["3c"])
-UI["42"]["CornerRadius"] = UDim.new(0.2, 0)
+UI["3b"] = Instance.new("UICorner", UI["35"])
+UI["3b"]["CornerRadius"] = UDim.new(0.2, 0)
 
 -- // StarterGui.SystemHub.Menu.UIPadding \\ --
-UI["43"] = Instance.new("UIPadding", UI["3c"])
+UI["3c"] = Instance.new("UIPadding", UI["35"])
 
 
 -- // StarterGui.SystemHub.LocalScript \\ --
-UI["44"] = Instance.new("LocalScript", UI["1"])
+UI["3d"] = Instance.new("LocalScript", UI["1"])
 
-
--- // StarterGui.SystemHub.LocalScript \\ --
-UI["45"] = Instance.new("LocalScript", UI["1"])
-
-
--- // StarterGui.SystemHub.Music \\ --
-UI["46"] = Instance.new("Frame", UI["1"])
-UI["46"]["Visible"] = false
-UI["46"]["BorderSizePixel"] = 0
-UI["46"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
-UI["46"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
-UI["46"]["Size"] = UDim2.new(0.42412, 0, 0.3808, 0)
-UI["46"]["Position"] = UDim2.new(0.47875, 0, 0.48406, 0)
-UI["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["46"]["Name"] = [[Music]]
-UI["46"]["BackgroundTransparency"] = 1
-
--- // StarterGui.SystemHub.Music.Aspect \\ --
-UI["47"] = Instance.new("UIAspectRatioConstraint", UI["46"])
-UI["47"]["AspectRatio"] = 1.6
-UI["47"]["Name"] = [[Aspect]]
-
--- // StarterGui.SystemHub.Music.Topbar \\ --
-UI["48"] = Instance.new("Frame", UI["46"])
-UI["48"]["ZIndex"] = 2
-UI["48"]["BorderSizePixel"] = 0
-UI["48"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11)
-UI["48"]["Size"] = UDim2.new(1, 0, 0.13, 0)
-UI["48"]["Position"] = UDim2.new(0, 0, 0.025, 0)
-UI["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["48"]["Name"] = [[Topbar]]
-UI["48"]["BackgroundTransparency"] = 1
-
--- // StarterGui.SystemHub.Music.Topbar.TextLabel \\ --
-UI["49"] = Instance.new("TextLabel", UI["48"])
-UI["49"]["BorderSizePixel"] = 0
-UI["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["49"]["TextSize"] = 15
-UI["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["49"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["49"]["BackgroundTransparency"] = 1
-UI["49"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["49"]["Size"] = UDim2.new(0, 0, 0.95, 0)
-UI["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["49"]["Text"] = [[System Hub]]
-UI["49"]["LayoutOrder"] = 3
-UI["49"]["AutomaticSize"] = Enum.AutomaticSize.X
-UI["49"]["Position"] = UDim2.new(0.1, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Music.Topbar.ImageLabel \\ --
-UI["4a"] = Instance.new("ImageLabel", UI["48"])
-UI["4a"]["BorderSizePixel"] = 0
-UI["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["4a"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["4a"]["Image"] = [[rbxassetid://12348119032]]
-UI["4a"]["Size"] = UDim2.new(0.05546, 0, 0.68271, 0)
-UI["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["4a"]["BackgroundTransparency"] = 1
-UI["4a"]["LayoutOrder"] = 1
-UI["4a"]["Position"] = UDim2.new(0.025, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Music.Topbar.ImageLabel.Aspect \\ --
-UI["4b"] = Instance.new("UIAspectRatioConstraint", UI["4a"])
-UI["4b"]["Name"] = [[Aspect]]
-
--- // StarterGui.SystemHub.Music.ImageLabel \\ --
-UI["4c"] = Instance.new("ImageLabel", UI["46"])
-UI["4c"]["BorderSizePixel"] = 0
-UI["4c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["4c"]["Image"] = [[rbxassetid://12162975974]]
-UI["4c"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["4c"]["BackgroundTransparency"] = 1
-UI["4c"]["Position"] = UDim2.new(0, 0, 0.02632, 0)
-
--- // StarterGui.SystemHub.Music.ImageLabel.UIGradient \\ --
-UI["4d"] = Instance.new("UIGradient", UI["4c"])
-UI["4d"]["Rotation"] = 90
-UI["4d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(209, 209, 209)),ColorSequenceKeypoint.new(0.801, Color3.fromRGB(19, 19, 19)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))}
-
--- // StarterGui.SystemHub.Music.UICorner \\ --
-UI["4e"] = Instance.new("UICorner", UI["46"])
-UI["4e"]["CornerRadius"] = UDim.new(0.015, 0)
-
--- // StarterGui.SystemHub.Music.Dragify \\ --
-UI["4f"] = Instance.new("LocalScript", UI["46"])
-UI["4f"]["Name"] = [[Dragify]]
-
--- // StarterGui.SystemHub.Music.container \\ --
-UI["50"] = Instance.new("ImageLabel", UI["46"])
-UI["50"]["ZIndex"] = 500
-UI["50"]["BorderSizePixel"] = 0
-UI["50"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
-UI["50"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
-UI["50"]["Image"] = [[rbxassetid://13685684156]]
-UI["50"]["Size"] = UDim2.new(1, 0, 1, 0)
-UI["50"]["Visible"] = false
-UI["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["50"]["BackgroundTransparency"] = 0.8
-UI["50"]["Selectable"] = true
-UI["50"]["Name"] = [[container]]
-UI["50"]["Position"] = UDim2.new(0.5, 0, 0.52632, 0)
-
--- // StarterGui.SystemHub.Music.container.label \\ --
-UI["51"] = Instance.new("TextLabel", UI["50"])
-UI["51"]["TextWrapped"] = true
-UI["51"]["ZIndex"] = 500
-UI["51"]["BorderSizePixel"] = 0
-UI["51"]["TextTransparency"] = 0.4
-UI["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["51"]["TextSize"] = 18
-UI["51"]["FontFace"] = Font.new([[rbxassetid://12187365364]], Enum.FontWeight.Light, Enum.FontStyle.Normal)
-UI["51"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["51"]["BackgroundTransparency"] = 1
-UI["51"]["Size"] = UDim2.new(1, -120, 0, 0)
-UI["51"]["BorderColor3"] = Color3.fromRGB(255, 255, 255)
-UI["51"]["Text"] = [[Activating Script]]
-UI["51"]["LayoutOrder"] = 2
-UI["51"]["AutomaticSize"] = Enum.AutomaticSize.Y
-UI["51"]["Name"] = [[label]]
-UI["51"]["Position"] = UDim2.new(0.14101, 0, 0.46703, 0)
-
--- // StarterGui.SystemHub.Music.container.label.gradient \\ --
-UI["52"] = Instance.new("UIGradient", UI["51"])
-UI["52"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(1.000, 1)}
-UI["52"]["Name"] = [[gradient]]
-
--- // StarterGui.SystemHub.Music.container.padding \\ --
-UI["53"] = Instance.new("UIPadding", UI["50"])
-UI["53"]["Name"] = [[padding]]
-
--- // StarterGui.SystemHub.Music.Otherss \\ --
-UI["54"] = Instance.new("TextButton", UI["46"])
-UI["54"]["BorderSizePixel"] = 0
-UI["54"]["AutoButtonColor"] = false
-UI["54"]["TextSize"] = 14
-UI["54"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["54"]["BackgroundColor3"] = Color3.fromRGB(123, 181, 114)
-UI["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["54"]["Size"] = UDim2.new(0.39143, 0, 0.13035, 0)
-UI["54"]["Name"] = [[Otherss]]
-UI["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["54"]["Text"] = [[]]
-UI["54"]["Position"] = UDim2.new(0.04848, 0, 0.70587, 0)
-
--- // StarterGui.SystemHub.Music.Otherss.Frame \\ --
-UI["55"] = Instance.new("Frame", UI["54"])
-UI["55"]["Visible"] = false
-UI["55"]["BorderSizePixel"] = 0
-UI["55"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21)
-UI["55"]["Size"] = UDim2.new(1.23852, 0, 1, 0)
-UI["55"]["Position"] = UDim2.new(-0.23852, 0, 0, 0)
-UI["55"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["55"]["BackgroundTransparency"] = 0.1
-
--- // StarterGui.SystemHub.Music.Otherss.Frame.Instruction \\ --
-UI["56"] = Instance.new("TextLabel", UI["55"])
-UI["56"]["TextWrapped"] = true
-UI["56"]["BorderSizePixel"] = 0
-UI["56"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["56"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["56"]["TextSize"] = 14
-UI["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["56"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["56"]["BackgroundTransparency"] = 1
-UI["56"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["56"]["Size"] = UDim2.new(0.65123, 0, 0.95, 0)
-UI["56"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["56"]["Text"] = [[Locked]]
-UI["56"]["Name"] = [[Instruction]]
-UI["56"]["Position"] = UDim2.new(0.30877, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Music.Otherss.Frame.ImageLabel \\ --
-UI["57"] = Instance.new("ImageLabel", UI["55"])
-UI["57"]["BorderSizePixel"] = 0
-UI["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["57"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["57"]["Image"] = [[rbxassetid://5743022869]]
-UI["57"]["Size"] = UDim2.new(0.11205, 0, 0.52994, 0)
-UI["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["57"]["BackgroundTransparency"] = 1
-UI["57"]["Position"] = UDim2.new(0.099, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Music.Otherss.Frame.ImageLabel.Aspect \\ --
-UI["58"] = Instance.new("UIAspectRatioConstraint", UI["57"])
-UI["58"]["Name"] = [[Aspect]]
-
--- // StarterGui.SystemHub.Music.Otherss.Instruction \\ --
-UI["59"] = Instance.new("TextLabel", UI["54"])
-UI["59"]["TextWrapped"] = true
-UI["59"]["BorderSizePixel"] = 0
-UI["59"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["59"]["TextSize"] = 14
-UI["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["59"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["59"]["BackgroundTransparency"] = 1
-UI["59"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["59"]["Size"] = UDim2.new(0.85267, 0, 0.95, 0)
-UI["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["59"]["Text"] = [[Play]]
-UI["59"]["Name"] = [[Instruction]]
-UI["59"]["Position"] = UDim2.new(0.07749, 0, 0.47287, 0)
-
--- // StarterGui.SystemHub.Music.Otherss.UICorner \\ --
-UI["5a"] = Instance.new("UICorner", UI["54"])
-UI["5a"]["CornerRadius"] = UDim.new(0.2, 0)
-
--- // StarterGui.SystemHub.Music.Idk \\ --
-UI["5b"] = Instance.new("TextButton", UI["46"])
-UI["5b"]["BorderSizePixel"] = 0
-UI["5b"]["AutoButtonColor"] = false
-UI["5b"]["TextSize"] = 14
-UI["5b"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5b"]["BackgroundColor3"] = Color3.fromRGB(181, 0, 4)
-UI["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["5b"]["Size"] = UDim2.new(0.39143, 0, 0.13035, 0)
-UI["5b"]["Name"] = [[Idk]]
-UI["5b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5b"]["Text"] = [[]]
-UI["5b"]["Position"] = UDim2.new(0.57614, 0, 0.70587, 0)
-
--- // StarterGui.SystemHub.Music.Idk.Frame \\ --
-UI["5c"] = Instance.new("Frame", UI["5b"])
-UI["5c"]["Visible"] = false
-UI["5c"]["BorderSizePixel"] = 0
-UI["5c"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21)
-UI["5c"]["Size"] = UDim2.new(1.23852, 0, 1, 0)
-UI["5c"]["Position"] = UDim2.new(-0.23852, 0, 0, 0)
-UI["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5c"]["BackgroundTransparency"] = 0.1
-
--- // StarterGui.SystemHub.Music.Idk.Frame.Instruction \\ --
-UI["5d"] = Instance.new("TextLabel", UI["5c"])
-UI["5d"]["TextWrapped"] = true
-UI["5d"]["BorderSizePixel"] = 0
-UI["5d"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["5d"]["TextSize"] = 14
-UI["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["5d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["5d"]["BackgroundTransparency"] = 1
-UI["5d"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["5d"]["Size"] = UDim2.new(0.65123, 0, 0.95, 0)
-UI["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5d"]["Text"] = [[Locked]]
-UI["5d"]["Name"] = [[Instruction]]
-UI["5d"]["Position"] = UDim2.new(0.30877, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Music.Idk.Frame.ImageLabel \\ --
-UI["5e"] = Instance.new("ImageLabel", UI["5c"])
-UI["5e"]["BorderSizePixel"] = 0
-UI["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["5e"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["5e"]["Image"] = [[rbxassetid://5743022869]]
-UI["5e"]["Size"] = UDim2.new(0.11205, 0, 0.52994, 0)
-UI["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["5e"]["BackgroundTransparency"] = 1
-UI["5e"]["Position"] = UDim2.new(0.099, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Music.Idk.Frame.ImageLabel.Aspect \\ --
-UI["5f"] = Instance.new("UIAspectRatioConstraint", UI["5e"])
-UI["5f"]["Name"] = [[Aspect]]
-
--- // StarterGui.SystemHub.Music.Idk.Instruction \\ --
-UI["60"] = Instance.new("TextLabel", UI["5b"])
-UI["60"]["TextWrapped"] = true
-UI["60"]["BorderSizePixel"] = 0
-UI["60"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["60"]["TextSize"] = 14
-UI["60"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["60"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["60"]["BackgroundTransparency"] = 1
-UI["60"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["60"]["Size"] = UDim2.new(0.85267, 0, 0.95, 0)
-UI["60"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["60"]["Text"] = [[Stop]]
-UI["60"]["Name"] = [[Instruction]]
-UI["60"]["Position"] = UDim2.new(0.07039, 0, 0.50696, 0)
-
--- // StarterGui.SystemHub.Music.Idk.UICorner \\ --
-UI["61"] = Instance.new("UICorner", UI["5b"])
-UI["61"]["CornerRadius"] = UDim.new(0.2, 0)
-
--- // StarterGui.SystemHub.Music.Home \\ --
-UI["62"] = Instance.new("Folder", UI["46"])
-UI["62"]["Name"] = [[Home]]
-
--- // StarterGui.SystemHub.Music.Home.Actions \\ --
-UI["63"] = Instance.new("Frame", UI["62"])
-UI["63"]["ZIndex"] = 2
-UI["63"]["BorderSizePixel"] = 0
-UI["63"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["63"]["AnchorPoint"] = Vector2.new(0.5, 0)
-UI["63"]["Size"] = UDim2.new(0.90541, 0, 0.37527, 0)
-UI["63"]["Position"] = UDim2.new(0.52487, 0, 0.57937, 0)
-UI["63"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["63"]["Name"] = [[Actions]]
-UI["63"]["BackgroundTransparency"] = 1
-
--- // StarterGui.SystemHub.Music.Home.Actions.Version \\ --
-UI["64"] = Instance.new("TextButton", UI["63"])
-UI["64"]["BorderSizePixel"] = 0
-UI["64"]["TextSize"] = 14
-UI["64"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["64"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
-UI["64"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["64"]["Size"] = UDim2.new(0.3, 0, 0.25, 0)
-UI["64"]["BackgroundTransparency"] = 1
-UI["64"]["LayoutOrder"] = 3
-UI["64"]["Name"] = [[Version]]
-UI["64"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["64"]["Text"] = [[]]
-UI["64"]["Position"] = UDim2.new(0, 0, 0.65724, 0)
-
--- // StarterGui.SystemHub.Music.Home.Actions.Version.Frame \\ --
-UI["65"] = Instance.new("Frame", UI["64"])
-UI["65"]["BorderSizePixel"] = 0
-UI["65"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["65"]["Size"] = UDim2.new(0.05, 0, 1, 0)
-UI["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["65"]["LayoutOrder"] = 2
-UI["65"]["BackgroundTransparency"] = 1
-
--- // StarterGui.SystemHub.Music.Home.Actions.Version.TextLabel \\ --
-UI["66"] = Instance.new("TextLabel", UI["64"])
-UI["66"]["BorderSizePixel"] = 0
-UI["66"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["66"]["TextSize"] = 15
-UI["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["66"]["TextColor3"] = Color3.fromRGB(230, 230, 230)
-UI["66"]["BackgroundTransparency"] = 1
-UI["66"]["Size"] = UDim2.new(0, 0, 0.85, 0)
-UI["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["66"]["Text"] = [[Version 1.0]]
-UI["66"]["LayoutOrder"] = 3
-UI["66"]["AutomaticSize"] = Enum.AutomaticSize.X
-UI["66"]["Position"] = UDim2.new(0.09518, 0, 3.68776, 0)
-
--- // StarterGui.SystemHub.Music.Home.Actions.Version.ImageLabel \\ --
-UI["67"] = Instance.new("ImageLabel", UI["64"])
-UI["67"]["BorderSizePixel"] = 0
-UI["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["67"]["ImageColor3"] = Color3.fromRGB(230, 230, 230)
-UI["67"]["Image"] = [[rbxassetid://8798704474]]
-UI["67"]["Size"] = UDim2.new(0.235, 0, 1, 0)
-UI["67"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["67"]["BackgroundTransparency"] = 1
-UI["67"]["LayoutOrder"] = 1
-UI["67"]["Position"] = UDim2.new(-0.19035, 0, 3.56723, 0)
-
--- // StarterGui.SystemHub.Music.Home.Actions.Version.ImageLabel.AspectRatio \\ --
-UI["68"] = Instance.new("UIAspectRatioConstraint", UI["67"])
-UI["68"]["Name"] = [[AspectRatio]]
-
--- // StarterGui.SystemHub.Music.Home.Actions.UIListLayout \\ --
-UI["69"] = Instance.new("UIListLayout", UI["63"])
-UI["69"]["Padding"] = UDim.new(0.04, 0)
-UI["69"]["SortOrder"] = Enum.SortOrder.LayoutOrder
-
--- // StarterGui.SystemHub.Music.Home.Actions.Status \\ --
-UI["6a"] = Instance.new("Folder", UI["63"])
-UI["6a"]["Name"] = [[Status]]
-
--- // StarterGui.SystemHub.Music.TextBox \\ --
-UI["6b"] = Instance.new("TextBox", UI["46"])
-UI["6b"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6b"]["BorderSizePixel"] = 0
-UI["6b"]["TextWrapped"] = true
-UI["6b"]["TextSize"] = 14
-UI["6b"]["BackgroundColor3"] = Color3.fromRGB(62, 62, 62)
-UI["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["6b"]["PlaceholderText"] = [[ID MUSIC FROM ROBLOX]]
-UI["6b"]["Size"] = UDim2.new(0, 244, 0, 38)
-UI["6b"]["Position"] = UDim2.new(0.14719, 0, 0.25328, 0)
-UI["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6b"]["Text"] = [[]]
-
--- // StarterGui.SystemHub.Music.TextBox.UICorner \\ --
-UI["6c"] = Instance.new("UICorner", UI["6b"])
-
-
--- // StarterGui.SystemHub.Music.Hello \\ --
-UI["6d"] = Instance.new("TextButton", UI["46"])
-UI["6d"]["BorderSizePixel"] = 0
-UI["6d"]["AutoButtonColor"] = false
-UI["6d"]["TextSize"] = 14
-UI["6d"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6d"]["BackgroundColor3"] = Color3.fromRGB(101, 148, 93)
-UI["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["6d"]["Size"] = UDim2.new(0.39143, 0, 0.13035, 0)
-UI["6d"]["Name"] = [[Hello]]
-UI["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6d"]["Text"] = [[]]
-UI["6d"]["Position"] = UDim2.new(0.04848, 0, 0.50591, 0)
-
--- // StarterGui.SystemHub.Music.Hello.Frame \\ --
-UI["6e"] = Instance.new("Frame", UI["6d"])
-UI["6e"]["Visible"] = false
-UI["6e"]["BorderSizePixel"] = 0
-UI["6e"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21)
-UI["6e"]["Size"] = UDim2.new(1.23852, 0, 1, 0)
-UI["6e"]["Position"] = UDim2.new(-0.23852, 0, 0, 0)
-UI["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6e"]["BackgroundTransparency"] = 0.1
-
--- // StarterGui.SystemHub.Music.Hello.Frame.Instruction \\ --
-UI["6f"] = Instance.new("TextLabel", UI["6e"])
-UI["6f"]["TextWrapped"] = true
-UI["6f"]["BorderSizePixel"] = 0
-UI["6f"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["6f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["6f"]["TextSize"] = 14
-UI["6f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["6f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["6f"]["BackgroundTransparency"] = 1
-UI["6f"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["6f"]["Size"] = UDim2.new(0.65123, 0, 0.95, 0)
-UI["6f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["6f"]["Text"] = [[Locked]]
-UI["6f"]["Name"] = [[Instruction]]
-UI["6f"]["Position"] = UDim2.new(0.30877, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Music.Hello.Frame.ImageLabel \\ --
-UI["70"] = Instance.new("ImageLabel", UI["6e"])
-UI["70"]["BorderSizePixel"] = 0
-UI["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["70"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["70"]["Image"] = [[rbxassetid://5743022869]]
-UI["70"]["Size"] = UDim2.new(0.11205, 0, 0.52994, 0)
-UI["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["70"]["BackgroundTransparency"] = 1
-UI["70"]["Position"] = UDim2.new(0.099, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Music.Hello.Frame.ImageLabel.Aspect \\ --
-UI["71"] = Instance.new("UIAspectRatioConstraint", UI["70"])
-UI["71"]["Name"] = [[Aspect]]
-
--- // StarterGui.SystemHub.Music.Hello.Instruction \\ --
-UI["72"] = Instance.new("TextLabel", UI["6d"])
-UI["72"]["TextWrapped"] = true
-UI["72"]["BorderSizePixel"] = 0
-UI["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["72"]["TextSize"] = 14
-UI["72"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["72"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["72"]["BackgroundTransparency"] = 1
-UI["72"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["72"]["Size"] = UDim2.new(0.85267, 0, 0.95, 0)
-UI["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["72"]["Text"] = [[Again Play]]
-UI["72"]["Name"] = [[Instruction]]
-UI["72"]["Position"] = UDim2.new(0.07749, 0, 0.47287, 0)
-
--- // StarterGui.SystemHub.Music.Hello.UICorner \\ --
-UI["73"] = Instance.new("UICorner", UI["6d"])
-UI["73"]["CornerRadius"] = UDim.new(0.2, 0)
-
--- // StarterGui.SystemHub.Music.Loop \\ --
-UI["74"] = Instance.new("TextButton", UI["46"])
-UI["74"]["BorderSizePixel"] = 0
-UI["74"]["AutoButtonColor"] = false
-UI["74"]["TextSize"] = 14
-UI["74"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
-UI["74"]["BackgroundColor3"] = Color3.fromRGB(44, 148, 53)
-UI["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-UI["74"]["Size"] = UDim2.new(0.39143, 0, 0.13035, 0)
-UI["74"]["Name"] = [[Loop]]
-UI["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["74"]["Text"] = [[]]
-UI["74"]["Position"] = UDim2.new(0.57336, 0, 0.50591, 0)
-
--- // StarterGui.SystemHub.Music.Loop.Frame \\ --
-UI["75"] = Instance.new("Frame", UI["74"])
-UI["75"]["Visible"] = false
-UI["75"]["BorderSizePixel"] = 0
-UI["75"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21)
-UI["75"]["Size"] = UDim2.new(1.23852, 0, 1, 0)
-UI["75"]["Position"] = UDim2.new(-0.23852, 0, 0, 0)
-UI["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["75"]["BackgroundTransparency"] = 0.1
-
--- // StarterGui.SystemHub.Music.Loop.Frame.Instruction \\ --
-UI["76"] = Instance.new("TextLabel", UI["75"])
-UI["76"]["TextWrapped"] = true
-UI["76"]["BorderSizePixel"] = 0
-UI["76"]["TextXAlignment"] = Enum.TextXAlignment.Left
-UI["76"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["76"]["TextSize"] = 14
-UI["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["76"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["76"]["BackgroundTransparency"] = 1
-UI["76"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["76"]["Size"] = UDim2.new(0.65123, 0, 0.95, 0)
-UI["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["76"]["Text"] = [[Locked]]
-UI["76"]["Name"] = [[Instruction]]
-UI["76"]["Position"] = UDim2.new(0.30877, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Music.Loop.Frame.ImageLabel \\ --
-UI["77"] = Instance.new("ImageLabel", UI["75"])
-UI["77"]["BorderSizePixel"] = 0
-UI["77"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["77"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["77"]["Image"] = [[rbxassetid://5743022869]]
-UI["77"]["Size"] = UDim2.new(0.11205, 0, 0.52994, 0)
-UI["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["77"]["BackgroundTransparency"] = 1
-UI["77"]["Position"] = UDim2.new(0.099, 0, 0.5, 0)
-
--- // StarterGui.SystemHub.Music.Loop.Frame.ImageLabel.Aspect \\ --
-UI["78"] = Instance.new("UIAspectRatioConstraint", UI["77"])
-UI["78"]["Name"] = [[Aspect]]
-
--- // StarterGui.SystemHub.Music.Loop.Instruction \\ --
-UI["79"] = Instance.new("TextLabel", UI["74"])
-UI["79"]["TextWrapped"] = true
-UI["79"]["BorderSizePixel"] = 0
-UI["79"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
-UI["79"]["TextSize"] = 14
-UI["79"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-UI["79"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
-UI["79"]["BackgroundTransparency"] = 1
-UI["79"]["AnchorPoint"] = Vector2.new(0, 0.5)
-UI["79"]["Size"] = UDim2.new(0.85267, 0, 0.95, 0)
-UI["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["79"]["Text"] = [[Loop]]
-UI["79"]["Name"] = [[Instruction]]
-UI["79"]["Position"] = UDim2.new(0.07749, 0, 0.47287, 0)
-
--- // StarterGui.SystemHub.Music.Loop.UICorner \\ --
-UI["7a"] = Instance.new("UICorner", UI["74"])
-UI["7a"]["CornerRadius"] = UDim.new(0.2, 0)
-
--- // StarterGui.SystemHub.Music.LocalMusic \\ --
-UI["7b"] = Instance.new("LocalScript", UI["46"])
-UI["7b"]["Name"] = [[LocalMusic]]
 
 -- // StarterGui.SystemHub.Frame.Topbar.Close.LocalScript \\ --
 local function SCRIPT_7()
@@ -1203,17 +593,8 @@ local script = UI["15"]
 	local button = script.Parent
 	local textLabel = script.Parent.Parent.container:WaitForChild("label") 
 	
-	local textPath = "Activating Script"
-	local textPath2 = "Activating Script."
-	local textPath3 = "Activating Script.."
-	local textPath4 = "Activating Script..."
-	local textPath5 = "Activating Script"
-	local textPath6 = "Activating Script."
-	local Status = "Status: Running"
-	
-	
 	local function onButtonClick()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemHubC/SystemHub/refs/heads/main/SystemHub.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SystemHubC/SystemHub/refs/heads/main/Idk.lua"))()
 		script.Parent.Parent.Home.Actions.Version.TextLabels.Text = "Status: Running"
 		wait(13)
 		local textObject = script.Parent.Parent.Home.Actions.Version.TextLabels
@@ -1237,15 +618,6 @@ local function SCRIPT_1e()
 local script = UI["1e"]
 	local button = script.Parent
 	local textLabel = script.Parent.Parent.container:WaitForChild("label") 
-	
-	local textPath = "Activating Script"
-	local textPath2 = "Activating Script."
-	local textPath3 = "Activating Script.."
-	local textPath4 = "Activating Script..."
-	local textPath5 = "Activating Script"
-	local textPath6 = "Activating Script."
-	local Status = "Status: Running"
-	
 	
 	local function onButtonClick()
 		script.Parent.Parent.Home.Actions.Version.TextLabels.Text = "Status: Running"
@@ -1325,8 +697,8 @@ local script = UI["25"]
 end
 task.spawn(SCRIPT_25)
 -- // StarterGui.SystemHub.LocalScript \\ --
-local function SCRIPT_44()
-local script = UI["44"]
+local function SCRIPT_3d()
+local script = UI["3d"]
 	local frame = script.Parent.Music
 	local open = script.Parent.Frame.Other
 	local close = script.Parent.Frame.Other
@@ -1355,132 +727,6 @@ local script = UI["44"]
 	open.MouseButton1Click:Connect(tweenFrame)
 	close.MouseButton1Click:Connect(tweenFrame)
 end
-task.spawn(SCRIPT_44)
--- // StarterGui.SystemHub.LocalScript \\ --
-local function SCRIPT_45()
-local script = UI["45"]
-	local frame = script.Parent.Frame
-	local open = script.Parent.Menu
-	local close = script.Parent.Menu
-	
-	frame.Size = UDim2.new(0.188, 0,0.071, 0)
-	
-	--ändere die sizes entprechend zu deinem Frame!
-	--du kannst noch sounds hinzufügen damit es besser ist
-	
-	local function tweenFrame()
-		if frame.Size == UDim2.new(0.188, 0,0.071, 0) then
-			
-			frame.Visible = true
-			close.Instruction.Text = "Close System Hub"
-			frame:TweenSize(UDim2.new(0.366, 0,0.448, 0),Enum.EasingDirection.Out,Enum.EasingStyle.Back,0.2)
-	
-		elseif frame.Size == UDim2.new(0.366, 0,0.448, 0) then
-			
-			frame:TweenSize(UDim2.new(0.188, 0,0.071, 0),Enum.EasingDirection.In,Enum.EasingStyle.Quint,0.15)
-			wait(0.13)
-			frame.Visible = false
-			open.Instruction.Text = "Open System Hub"
-		end
-	end
-	
-	open.MouseButton1Click:Connect(tweenFrame)
-	close.MouseButton1Click:Connect(tweenFrame)
-end
-task.spawn(SCRIPT_45)
--- // StarterGui.SystemHub.Music.Dragify \\ --
-local function SCRIPT_4f()
-local script = UI["4f"]
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-		dragToggle = nil
-		dragSpeed = 0.15
-		dragInput = nil
-		dragStart = nil
-		dragPos = nil
-		function updateInput(input)
-			Delta = input.Position - dragStart
-			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
-		end
-		Frame.InputBegan:Connect(function(input)
-			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-				dragToggle = true
-				dragStart = input.Position
-				startPos = Frame.Position
-				input.Changed:Connect(function()
-					if input.UserInputState == Enum.UserInputState.End then
-						dragToggle = false
-					end
-				end)
-			end
-		end)
-		Frame.InputChanged:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-				dragInput = input
-			end
-		end)
-		game:GetService("UserInputService").InputChanged:Connect(function(input)
-			if input == dragInput and dragToggle then
-				updateInput(input)
-			end
-		end)
-	end
-	dragify(script.Parent)
-	
-end
-task.spawn(SCRIPT_4f)
--- // StarterGui.SystemHub.Music.LocalMusic \\ --
-local function SCRIPT_7b()
-local script = UI["7b"]
-	local SoundService = game:GetService("SoundService")
-	local TweenService = game:GetService("TweenService")
-	
-	local PanelUI = script.Parent
-	local TextBox = PanelUI:FindFirstChild("TextBox") -- Поле для ввода ID
-	local PlayButton = PanelUI:FindFirstChild("Otherss") -- Кнопка "Играть"
-	local StopButton = PanelUI:FindFirstChild("Idk") -- Кнопка "Стоп"
-	local RestartButton = PanelUI:FindFirstChild("Hello") -- Кнопка "С начала"
-	local LoopButton = PanelUI:FindFirstChild("Loop") -- Кнопка "Повторять"
-	
-	local Music = Instance.new("Sound") -- Создаем объект музыки
-	Music.Parent = SoundService
-	Music.Volume = 2 -- Громкость
-	Music.Looped = false -- По умолчанию не зацикливаем
-	
-	-- Функция для воспроизведения музыки
-	local function PlayMusic()
-		local SoundID = TextBox.Text
-		if SoundID and SoundID ~= "" then
-			Music.SoundId = "rbxassetid://" .. SoundID
-			Music:Play()
-		end
-	end
-	
-	-- Функция для остановки музыки
-	local function StopMusic()
-		Music:Stop()
-	end
-	
-	-- Функция для перезапуска музыки
-	local function RestartMusic()
-		Music:Stop()
-		Music:Play()
-	end
-	
-	-- Функция для зацикливания музыки
-	local function LoopMusic()
-		Music.Looped = true
-		Music:Play()
-	end
-	
-	-- Привязываем кнопки к функциям
-	PlayButton.MouseButton1Click:Connect(PlayMusic)
-	StopButton.MouseButton1Click:Connect(StopMusic)
-	RestartButton.MouseButton1Click:Connect(RestartMusic)
-	LoopButton.MouseButton1Click:Connect(LoopMusic)
-	
-end
-task.spawn(SCRIPT_7b)
+task.spawn(SCRIPT_3d)
 
 return UI["1"], require;
