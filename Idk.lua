@@ -9,7 +9,6 @@ local StarterGui_upvr = game:GetService("StarterGui")
 local TweenService_upvr = game:GetService("TweenService")
 
 workspace:SetAttribute("MineSpeed", 0.1)
-game.Players.LocalPlayer.PlayerGui.SystemHub.Frame.Home.Actions.Version.TextLabels.Text = "Status: successfully"
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
@@ -399,6 +398,3 @@ local Toggle_AntiFling = Tabss:CreateToggle({
         end
     end
 })
-else
-    game.Players.LocalPlayer.PlayerGui.SystemHub.Frame.Home.Actions.Version.TextLabels.Text = "Status: the game is not supported"
-end
