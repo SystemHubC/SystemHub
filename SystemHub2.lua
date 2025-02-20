@@ -115,8 +115,6 @@ local ResetButton = Tab:CreateButton({
     end,
  })
 
- })
-
 local Button = Tabe:CreateButton({
     Name = "infinite yield",
     Callback = function()
