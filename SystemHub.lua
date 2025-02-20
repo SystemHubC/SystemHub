@@ -19,7 +19,7 @@ UI["2"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16)
 UI["2"]["Size"] = UDim2.new(0.36615, 0, 0.44839, 0)
 UI["2"]["Position"] = UDim2.new(0, 423, 0, 264)
 UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-UI["2"]["BackgroundTransparency"] = 1
+UI["2"]["BackgroundTransparency"] = 0
 
 -- // StarterGui.SystemHub.Frame.Aspect \\ --
 UI["3"] = Instance.new("UIAspectRatioConstraint", UI["2"])
