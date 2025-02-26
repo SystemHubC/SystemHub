@@ -11,8 +11,6 @@ if game.PlaceId == 11938746175 then
     workspace:SetAttribute("MineSpeed", 0.1)
     
     local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-     game.Players.LocalPlayer.PlayerGui.SystemHub.Frame.Home.Actions.Version.TextLabels.Text = "Status: successfully"
-    
     wait(3)
     local LocalPlayer = Players.LocalPlayer
     local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
@@ -95,7 +93,7 @@ if game.PlaceId == 11938746175 then
            Invite = "HtucSVyKFH",
            RememberJoins = true 
         },
-        KeySystem = true,
+        KeySystem = false,
         KeySettings = {
             Title = "Elected Admin | Key System",
             Subtitle = "Key System",
@@ -399,6 +397,3 @@ if game.PlaceId == 11938746175 then
             end
         end,
     })
-    else
-      game.Players.LocalPlayer.PlayerGui.SystemHub.Frame.Home.Actions.Version.TextLabels.Text = "the game is not supported"
-    end
