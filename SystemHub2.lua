@@ -33,7 +33,6 @@ local Window = Rayfield:CreateWindow({
        Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
- game.Players.LocalPlayer.PlayerGui.SystemHub.Frame.Home.Actions.Version.TextLabels.Text = "Status: successfully"
  local Tab = Window:CreateTab("Misc", 4483362458) -- Title, Image
  local Tabe = Window:CreateTab("Scripts", 4483362458) -- Title, Image
  local Tabs = Window:CreateTab("For Creators Script", 4483362458) -- Title, Image
