@@ -1,3 +1,38 @@
+elseif game.PlaceId == 4598019433 then
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "Pet Simulator 99 | System Hub",
+    Icon = 0,
+    LoadingTitle = "Welcome...",
+    LoadingSubtitle = "by Andrey",
+    Theme = "Default",
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false,
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = nil,
+        FileName = "System Hub | Script 2"
+    },
+    Discord = {
+        Enabled = true,
+        Invite = "HtucSVyKFH",
+        RememberJoins = true
+    },
+    KeySystem = true,
+    KeySettings = {
+        Title = "PS99 | Key System",
+        Subtitle = "Key System",
+        Note = "Join to Discord Server discord.gg/HtucSVyKFH",
+        FileName = "Key",
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = {"grgscript5"}
+    }
+})
+
+local Tab = Window:CreateTab("Obby", "rewind")
+
 local Label = Tab:CreateLabel("For Completing Obbys need Teleport on map obby [BETA TAB]", 4483362458, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
 
 -- Кнопка для завершения Classic Obby
@@ -112,3 +147,4 @@ local Button3 = Tab:CreateButton({
         teleportToCoordinates()
     end,
 })
+
