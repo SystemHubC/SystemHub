@@ -398,3 +398,37 @@ if game.PlaceId == 11938746175 then
         end,
     })
 end
+else
+    local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+    Name = "Error | System Hub",
+    Icon = 0,
+    LoadingTitle = "Welcome...",
+    LoadingSubtitle = "by Andrey",
+    Theme = "Default",
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false,
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = nil,
+        FileName = "System Hub | Script 2"
+    },
+    Discord = {
+        Enabled = true,
+        Invite = "HtucSVyKFH",
+        RememberJoins = true
+    },
+    KeySystem = false,
+    KeySettings = {
+        Title = "PS99 | Key System",
+        Subtitle = "Key System",
+        Note = "Join to Discord Server discord.gg/HtucSVyKFH",
+        FileName = "Key",
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = {"grgscript5"}
+    }
+})
+
+local Tab = Window:CreateTab("Why?", "rewind")
+local Label = Tab:CreateLabel("Not Supported For This Game", "rewind")
